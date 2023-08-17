@@ -10,15 +10,72 @@
 <body>
     <header></header>
     <main>
-        <!-- Container -->
-        <section>
+        <!-- Main Container -->
+        <section class="flex flex-col lg:flex-row container mx-auto mt-6">
             <!-- Shape container -->
-            <div>
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- card 01 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-4 pt-8"><img src="./images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="font-bold text-xl">Triangle</h2>
+                      <p class="mt-4">Area (A) = 0.5 x b x h</p>
+                      <!-- input fill -->
+                      <div class="mt-2 mb-4">
+                        <input class="w-16 bg-slate-100 rounded-md" placeholder="b" type="text">
+                        <span>cm</span>
+                        <input class="w-16 bg-slate-100 ml-4 rounded-md" placeholder="h" type="text">
+                        <span>cm</span>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- card 02 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-4 pt-8"><img src="./images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="font-bold text-xl">Rectangle</h2>
+                      <p class="mt-4">Area (A) = w x I</p>
+                      <!-- input fill -->
+                      <div class="mt-2 mb-4">
+                        <input class="w-16 bg-slate-100 rounded-md" placeholder="w" type="text">
+                        <span>cm</span>
+                        <input class="w-16 bg-slate-100 ml-4 rounded-md" placeholder="I" type="text">
+                        <span>cm</span>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+                <!-- card 03 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-4 pt-8"><img src="./images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="font-bold text-xl">Parallelogram</h2>
+                      <p class="mt-4">Area (A) = b x h</p>
+                      <p>b=10cm  h=12cm</p>
+                      <!-- input fill -->
+                      <div class="mt-2 mb-4">
+                        <input class="w-16 bg-slate-100 rounded-md" placeholder="b" type="text">
+                        <span>cm</span>
+                        <input class="w-16 bg-slate-100 ml-4 rounded-md" placeholder="h" type="text">
+                        <span>cm</span>
+                      </div>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                    </div>
+                </div>
+
 
             </div>
             <!-- area calculator -->
-            <div>
-
+            <div class="w-[400px] text-center">
+                <h4 class="text-4xl">Area Calculator</h4>
             </div>
         </section>
     </main>
