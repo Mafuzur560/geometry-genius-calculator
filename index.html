@@ -23,14 +23,14 @@
                       <p class="mt-4">Area (A) = 0.5 x b x h</p>
                       <!-- input fill -->
                       <div class="mt-2 mb-4">
-                        <input id="tringle-base" class="w-16 bg-slate-100 rounded-md" placeholder="b" type="text">
+                        <input id="triangle-base" class="w-16 bg-slate-100 rounded-md" placeholder="b" type="text">
                         <span>cm</span>
-                        <input id="tringle-height" class="w-16 bg-slate-100 ml-4 rounded-md" placeholder="h" type="text">
+                        <input id="triangle-height" class="w-16 bg-slate-100 ml-4 rounded-md" placeholder="h" type="text">
                         <span>cm</span>
                       </div>
-                      <p>Area: <span id="tringle-area">0 </span>cm<sup>2</sup><p>
+                      <p>Area: <span id="triangle-area">0 </span>cm<sup>2</sup><p>
                       <div class="card-actions justify-end">
-                        <button onclick="calculateTringleArea()" class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="triangle()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -42,32 +42,33 @@
                       <p class="mt-4">Area (A) = w x I</p>
                       <!-- input fill -->
                       <div class="mt-2 mb-4">
-                        <input class="w-16 bg-slate-100 rounded-md" placeholder="w" type="text">
+                        <input id="rectangle-width" class="w-16 bg-slate-100 rounded-md" placeholder="w" type="text">
                         <span>cm</span>
-                        <input class="w-16 bg-slate-100 ml-4 rounded-md" placeholder="I" type="text">
+                        <input id="rectangle-height" class="w-16 bg-slate-100 ml-4 rounded-md" placeholder="I" type="text">
                         <span>cm</span>
                       </div>
+                      <p>Area: <span id="rectangle-area">0 </span>cm<sup>2</sup><p></p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="rectangle()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                 </div>
                 <!-- card 03 -->
                 <div class="card bg-base-100 shadow-xl">
-                    <figure class="px-4 pt-8"><img src="./images/parallelogram.png" alt="Shoes" /></figure>
+                    <figure class="px-4 pt-8"><img src="./images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body text-center">
-                      <h2 class="font-bold text-xl">Parallelogram</h2>
-                      <p class="mt-4">Area (A) = b x h</p>
-                      <p>b=10cm  h=12cm</p>
+                      <h2 class="font-bold text-xl">Ellipse</h2>
+                      <p class="mt-4">Area (A) = π ab</p>
                       <!-- input fill -->
                       <div class="mt-2 mb-4">
-                        <input class="w-16 bg-slate-100 rounded-md" placeholder="b" type="text">
+                        <input id="ellipse-a" class="w-16 bg-slate-100 rounded-md" placeholder="a" type="text">
                         <span>cm</span>
-                        <input class="w-16 bg-slate-100 ml-4 rounded-md" placeholder="h" type="text">
+                        <input id="ellipse-b" class="w-16 bg-slate-100 ml-4 rounded-md" placeholder="b" type="text">
                         <span>cm</span>
                       </div>
+                      <p>Area: <span id="ellipse-area">0 </span>cm<sup>2</sup><p></p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="ellipse()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                 </div>
