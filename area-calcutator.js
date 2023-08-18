@@ -3,6 +3,12 @@ function triangle(){
     const base1 = getInputValue('triangle-base');
     const height1 = getInputValue('triangle-height');
 
+    // validate input number
+    if(isNaN(base1) || isNaN(height1)){
+        alert('Please insert a number');
+        return;
+    }
+
     const area1 = 0.5 * base1 * height1 ;
     setTextField('triangle-area', area1);
 
@@ -14,6 +20,12 @@ function rectangle(){
     const base2 = getInputValue('rectangle-width');
     const height2 = getInputValue('rectangle-height');
 
+    // validate input number
+    if(isNaN(base2) || isNaN(height2)){
+        alert('Please insert a number');
+        return;
+    }
+
     const area2 = base2 * height2 ;
     setTextField('rectangle-area', area2);
 
@@ -24,6 +36,12 @@ function rectangle(){
 function ellipse(){
     const base3 = getInputValue('ellipse-a');
     const height3 = getInputValue('ellipse-b');
+
+    // validate input number
+    if(isNaN(base3) || isNaN(height3)){
+        alert('Please insert a number');
+        return;
+    }
 
     const area3 = 3.14 * base3 * height3 ;
     setTextField('ellipse-area', area3);
