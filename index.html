@@ -23,13 +23,14 @@
                       <p class="mt-4">Area (A) = 0.5 x b x h</p>
                       <!-- input fill -->
                       <div class="mt-2 mb-4">
-                        <input class="w-16 bg-slate-100 rounded-md" placeholder="b" type="text">
+                        <input id="tringle-base" class="w-16 bg-slate-100 rounded-md" placeholder="b" type="text">
                         <span>cm</span>
-                        <input class="w-16 bg-slate-100 ml-4 rounded-md" placeholder="h" type="text">
+                        <input id="tringle-height" class="w-16 bg-slate-100 ml-4 rounded-md" placeholder="h" type="text">
                         <span>cm</span>
                       </div>
+                      <p>Area: <span id="tringle-area">0 </span>cm<sup>2</sup><p>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculateTringleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                 </div>
