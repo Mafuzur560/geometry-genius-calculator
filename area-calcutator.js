@@ -12,6 +12,9 @@ function triangle(){
     const area1 = 0.5 * base1 * height1 ;
     setTextField('triangle-area', area1);
 
+    // set result in area
+    getAreaResult('Triangle', area1);
+
 }
 
 
@@ -29,6 +32,9 @@ function rectangle(){
     const area2 = base2 * height2 ;
     setTextField('rectangle-area', area2);
 
+    // set result in area
+    getAreaResult('Rectangle', area2);
+
 }
 
 
@@ -45,6 +51,9 @@ function ellipse(){
 
     const area3 = 3.14 * base3 * height3 ;
     setTextField('ellipse-area', area3);
+
+    // set result in area
+    getAreaResult('Ellipse', area3);
 
 }
 
@@ -66,4 +75,16 @@ function getInputValue(id){
 function setTextField(showArea, areanew){
     const areaInput = document.getElementById(showArea);
     areaInput.innerText = areanew ;
+}
+
+
+// Show result in area
+function getAreaResult(areaName, result){
+    const getArea = document.getElementById('this-area');
+    const count = getArea.childElementCount;
+    const p = document.createElement('p');
+
+    p.classList.add('my-4');
+    p.innerHTML = `${count + 1}. ${areaName} ${result} cm<sup>2</sup>  <button class="btn btn-sm btn-success">Convert</button>`;
+    getArea.appendChild(p);
 }
